@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="Paralleltest" parallel="tests" thread-count="2" preserve-order="true">
+	<test name ="ParallelTest1 Browser Chrome">
+		<parameter name ="browser" value="chrome" />
+		<classes>
+			<class name="com.HybridFramework.Homepage.ParallelTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name ="ParallelTest2 Browser Firefox">
+		<parameter name ="browser" value="firefox" />
+			<classes>
+				<class name="com.HybridFramework.Homepage.ParallelTest" />
+			</classes>
+	</test> <!-- Test -->
+</suite>
