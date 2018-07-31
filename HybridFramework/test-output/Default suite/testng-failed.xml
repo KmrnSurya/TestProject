@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)" preserve-order="false">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HybridFramework.Homepage.TestDataDrivenScript">
+      <class name="com.HybridFramework.Homepage.Scenario01">
         <methods>
-          <include name="testLogin"/>
-          <include name="endTest"/>
+          <include name="beforemethod"/>
+          <include name="testlogin"/>
+          <include name="afterMethod"/>
         </methods>
-      </class>
+      </class> <!-- com.HybridFramework.Homepage.Scenario01 -->
     </classes>
-  </test>
-</suite>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

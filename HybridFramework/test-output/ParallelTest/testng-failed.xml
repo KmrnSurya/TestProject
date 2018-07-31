@@ -1,45 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Paralleltest]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="firefox"/>
-  <test name="ParallelTest1 Browser Chrome">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.HybridFramework.Homepage.ParallelTest"/>
-    </classes>
-  </test> <!-- ParallelTest1 Browser Chrome -->
-  <test name="ParallelTest2 Browser Firefox">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.HybridFramework.Homepage.ParallelTest"/>
-    </classes>
-  </test> <!-- ParallelTest2 Browser Firefox -->
-  <test parallel="tests" name="ParallelTest1 Browser Chrome(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Paralleltest]" parallel="tests">
+  <test thread-count="2" name="ParallelTest1 Browser Chrome(failed)" parallel="tests">
     <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.HybridFramework.Homepage.ParallelTest">
         <methods>
           <include name="testlogin"/>
           <include name="getBrowser"/>
-          <include name="getBrowser"/>
-          <include name="closebrowser"/>
-          <include name="closebrowser"/>
         </methods>
       </class> <!-- com.HybridFramework.Homepage.ParallelTest -->
     </classes>
   </test> <!-- ParallelTest1 Browser Chrome(failed) -->
-  <test parallel="tests" name="ParallelTest2 Browser Firefox(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.HybridFramework.Homepage.ParallelTest">
-        <methods>
-          <include name="testlogin"/>
-          <include name="getBrowser"/>
-          <include name="getBrowser"/>
-          <include name="closebrowser"/>
-          <include name="closebrowser"/>
-        </methods>
-      </class> <!-- com.HybridFramework.Homepage.ParallelTest -->
-    </classes>
-  </test> <!-- ParallelTest2 Browser Firefox(failed) -->
 </suite> <!-- Failed suite [Paralleltest] -->

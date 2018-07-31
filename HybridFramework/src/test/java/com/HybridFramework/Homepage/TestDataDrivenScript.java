@@ -17,9 +17,14 @@ public class TestDataDrivenScript extends TestBase
 	public void testLogin(String username, String password, String runMode)
 	{
 		logger.info("Reading Data from excel_TestNG");
+		
+		
 		System.out.println("userName:-" +username);
 		System.out.println("password:-" +password);
 		System.out.println("runMode:-" +runMode);
 	}
+	
+	
+	
 
 }	

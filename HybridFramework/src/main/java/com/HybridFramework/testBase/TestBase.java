@@ -25,6 +25,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import java.lang.reflect.Method;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -71,40 +72,40 @@ public class TestBase
 		}
 	}
 
-
+	@AfterMethod()
 	public void afterMethod(ITestResult result) throws IOException
 	{
 		getresult(result);
 	}
 		
 	
-	
+	@BeforeMethod()
 	public void beforemethod(Method result)
 	{	
 		test = extent.startTest(result.getName());
 		test.log(LogStatus.INFO, result.getName() + "Test Started");
 	}
 	
-//	@AfterClass(alwaysRun = true)
-//	public void endTest()
+	@AfterClass(alwaysRun = true)
+	public void endTest()
+	{
+		driver.quit();
+		extent.endTest(test);
+		extent.flush();
+	}
+//	
+//	@AfterClass
+//	public void closebrowser()
 //	{
-//		driver.quit();
-//		extent.endTest(test);
-//		extent.flush();
+//		if(driver != null)
+//		{
+//			driver.quit();
+//		}
 //	}
 	
-	@AfterClass
-	public void closebrowser()
-	{
-		if(driver != null)
-		{
-			driver.quit();
-		}
-	}
 	
 	
-	@BeforeTest
-	@Parameters("browser")
+//	@Parameters("browser")
 	public void getBrowser(String browser)
 	{
 		if(System.getProperty("os.name").contains("Windows"))

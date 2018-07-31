@@ -9,10 +9,5 @@
 		</classes>
 	</test> <!-- Test -->
 
-	<test name ="ParallelTest2 Browser Firefox">
-		<parameter name ="browser" value="firefox" />
-			<classes>
-				<class name="com.HybridFramework.Homepage.ParallelTest" />
-			</classes>
-	</test> <!-- Test -->
+
 </suite>
