@@ -2,42 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7575" started-at="2018-07-31T09:27:05Z" finished-at="2018-07-31T09:27:13Z">
+  <suite name="Default suite" duration-ms="33044" started-at="2018-08-03T10:52:32Z" finished-at="2018-08-03T10:53:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7575" started-at="2018-07-31T09:27:05Z" finished-at="2018-07-31T09:27:13Z">
-      <class name="com.HybridFramework.Homepage.Scenario01">
-        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:com.HybridFramework.Homepage.Scenario01@60a8c0]" name="beforemethod" is-config="true" duration-ms="21" started-at="2018-07-31T09:27:05Z" finished-at="2018-07-31T09:27:05Z">
+    <test name="Default test" duration-ms="33044" started-at="2018-08-03T10:52:32Z" finished-at="2018-08-03T10:53:06Z">
+      <class name="com.HybridFramework.Homepage.TWPRC_CreationofRequest">
+        <test-method status="PASS" signature="beforemethod(java.lang.reflect.Method)[pri:0, instance:com.HybridFramework.Homepage.TWPRC_CreationofRequest@60a8c0]" name="beforemethod" is-config="true" duration-ms="22" started-at="2018-08-03T10:52:33Z" finished-at="2018-08-03T10:52:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.HybridFramework.Homepage.Scenario01.testlogin()]]>
+                <![CDATA[public void com.HybridFramework.Homepage.TWPRC_CreationofRequest.testlogin() throws java.io.IOException,java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="testlogin()[pri:0, instance:com.HybridFramework.Homepage.Scenario01@60a8c0]" name="testlogin" duration-ms="6148" started-at="2018-07-31T09:27:05Z" finished-at="2018-07-31T09:27:11Z">
+        <test-method status="PASS" signature="testlogin()[pri:0, instance:com.HybridFramework.Homepage.TWPRC_CreationofRequest@60a8c0]" name="testlogin" duration-ms="32511" started-at="2018-08-03T10:52:33Z" finished-at="2018-08-03T10:53:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HybridFramework.Homepage.Scenario01@60a8c0]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-07-31T09:27:11Z" finished-at="2018-07-31T09:27:11Z">
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.HybridFramework.Homepage.TWPRC_CreationofRequest@60a8c0]" name="endTest" is-config="true" duration-ms="465" started-at="2018-08-03T10:53:05Z" finished-at="2018-08-03T10:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.HybridFramework.Homepage.TWPRC_CreationofRequest@60a8c0]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-08-03T10:53:05Z" finished-at="2018-08-03T10:53:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testlogin status=SUCCESS method=Scenario01.testlogin()[pri:0, instance:com.HybridFramework.Homepage.Scenario01@60a8c0] output={null}]]]>
+                <![CDATA[[TestResult name=testlogin status=SUCCESS method=TWPRC_CreationofRequest.testlogin()[pri:0, instance:com.HybridFramework.Homepage.TWPRC_CreationofRequest@60a8c0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.HybridFramework.Homepage.Scenario01@60a8c0]" name="endTest" is-config="true" duration-ms="1357" started-at="2018-07-31T09:27:11Z" finished-at="2018-07-31T09:27:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-      </class> <!-- com.HybridFramework.Homepage.Scenario01 -->
+      </class> <!-- com.HybridFramework.Homepage.TWPRC_CreationofRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

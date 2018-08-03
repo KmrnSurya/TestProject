@@ -6,6 +6,7 @@
       <class name="com.HybridFramework.Homepage.Scenario01">
         <methods>
           <include name="beforemethod"/>
+          <include name="endTest"/>
           <include name="testlogin"/>
           <include name="afterMethod"/>
         </methods>
