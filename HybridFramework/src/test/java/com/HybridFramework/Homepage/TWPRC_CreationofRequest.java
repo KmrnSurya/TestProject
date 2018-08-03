@@ -1,6 +1,5 @@
 package com.HybridFramework.Homepage;
 
-
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
@@ -18,10 +17,10 @@ import com.HybridFramework.testBase.TestBase;
 
 
 
-public class Scenario01 extends TestBase
+public class TWPRC_CreationofRequest extends TestBase
 {
 	
-	public static final Logger logger = Logger.getLogger(Scenario01.class.getName());
+	public static final Logger logger = Logger.getLogger(TWPRC_CreationofRequest.class.getName());
 	
 	@Test
 	public void testlogin() throws IOException, InterruptedException
@@ -104,7 +103,7 @@ public class Scenario01 extends TestBase
 		implicitWait(9000);
 		WebElement web11 = driver.findElement(By.xpath("//*[@id=\"PAFType1Details_LookupView3_QuickFind\"]"));
 		
-		web11.sendKeys("Logan, Marie");
+		web11.sendKeys("Raymond, Cassandra");
 		
 		web11.sendKeys(Keys.ENTER);
 		

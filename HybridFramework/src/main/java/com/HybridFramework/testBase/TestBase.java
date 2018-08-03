@@ -89,7 +89,7 @@ public class TestBase
 	@AfterClass(alwaysRun = true)
 	public void endTest()
 	{
-		driver.quit();
+//		driver.quit();
 		extent.endTest(test);
 		extent.flush();
 	}
@@ -108,6 +108,7 @@ public class TestBase
 //	@Parameters("browser")
 	public void getBrowser(String browser)
 	{
+		logger.info("Loading browser");
 		if(System.getProperty("os.name").contains("Windows"))
 		{
 			if(browser.equalsIgnoreCase("firefox"))
@@ -174,7 +175,7 @@ public class TestBase
 		return wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	
-	public void implicittWait(long time)
+	public void implicitWait(long time)
 	{
 		driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 	}
